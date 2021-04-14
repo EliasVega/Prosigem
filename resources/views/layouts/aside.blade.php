@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ url('admin/colegio') }}" class="brand-link elevation-4">
+    <a href="{{ url('admin/departamento') }}" class="brand-link elevation-4">
         <span class="logo-mini"><strong class="titulo-show">P</strong></span>
         <span class="brand-text font-weight-light"><strong>PROSIGEM S.A.S.</strong> </span>
     </a>
@@ -25,9 +25,16 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('admin/colegio') }}" class="nav-link">
+                            <a href="{{ url('admin/departamento') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Colegios</p>
+                                <p>Departamentos</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('admin/municipio') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Municipios</p>
                             </a>
                         </li>
                     </ul>

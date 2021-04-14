@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\MunicipioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::resource('admin/departamento', DepartamentoController::class);
+Route::resource('admin/municipio', MunicipioController::class);
