@@ -5,6 +5,7 @@ use App\Http\Controllers\ArlController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\MunicipioController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ServicioController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +34,4 @@ Route::resource('admin/servicio', ServicioController::class);
 Route::resource('admin/empresa', EmpresaController::class);
 Route::resource('admin/actEco', ActividadEconomicaController::class);
 Route::resource('admin/arl', ArlController::class);
+Route::resource('admin/role', RoleController::class);
