@@ -3,6 +3,7 @@
 use App\Http\Controllers\ActividadEconomicaController;
 use App\Http\Controllers\ArlController;
 use App\Http\Controllers\CargoController;
+use App\Http\Controllers\CargoDocumentoController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\EmpresaController;
@@ -43,6 +44,11 @@ Route::resource('admin/sede', SedeController::class);
 Route::resource('admin/proceso', ProcesoController::class);
 Route::resource('admin/cargo', CargoController::class);
 Route::resource('admin/documento', DocumentoController::class);
+Route::resource('admin/cargoDocumento', CargoDocumentoController::class);
 
 Route::get('/getMunicipio', [EmpresaController::class, 'getMunicipio']);
+Route::get('/personalShow', [EmpresaController::class, 'personalShow'])->name('personalShow');
 Route::get('/getMunicipio', [SedeController::class, 'getMunicipio']);
+Route::get('/createDocumento', [CargoController::class, 'createDocumento'])->name('createDocumento');
+Route::get('/userShow', [CargoController::class, 'userShow'])->name('userShow');
+Route::post('admin/cargo/documento/{id}', [CargoController::class, 'storeDocumento'])->name('stroeDocumento');
