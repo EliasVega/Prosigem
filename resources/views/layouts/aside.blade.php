@@ -85,6 +85,12 @@
                                 <p>Cargos</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/documento') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Documentos</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
