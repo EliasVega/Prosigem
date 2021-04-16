@@ -61,6 +61,12 @@
                                 <p>Arl</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/role') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Roles</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
