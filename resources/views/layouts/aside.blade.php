@@ -67,6 +67,12 @@
                                 <p>Roles</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/sede') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sedes</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
