@@ -79,6 +79,12 @@
                                 <p>Procesos</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/cargo') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Cargos</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
