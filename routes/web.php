@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ActividadEconomicaController;
 use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\ServicioController;
 use Illuminate\Support\Facades\Route;
@@ -27,3 +29,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resource('admin/departamento', DepartamentoController::class);
 Route::resource('admin/municipio', MunicipioController::class);
 Route::resource('admin/servicio', ServicioController::class);
+Route::resource('admin/empresa', EmpresaController::class);
+Route::resource('admin/actEco', ActividadEconomicaController::class);

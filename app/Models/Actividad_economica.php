@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Servicio extends Model
+class Actividad_economica extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
 
     protected $fillable = [
-        'nombre'
+        'codigo',
+        'descripcion',
     ];
 
-    public function empresas()
+    public function sedes()
     {
-        return $this->hasMany(Empresa::class);
+        return $this->hasMany(Sede::class);
     }
 }
