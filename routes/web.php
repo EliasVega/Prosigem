@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ActividadEconomicaController;
 use App\Http\Controllers\ArlController;
+use App\Http\Controllers\CargoController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\MunicipioController;
@@ -39,6 +40,7 @@ Route::resource('admin/arl', ArlController::class);
 Route::resource('admin/role', RoleController::class);
 Route::resource('admin/sede', SedeController::class);
 Route::resource('admin/proceso', ProcesoController::class);
+Route::resource('admin/cargo', CargoController::class);
 
 Route::get('/getMunicipio', [EmpresaController::class, 'getMunicipio']);
 Route::get('/getMunicipio', [SedeController::class, 'getMunicipio']);
