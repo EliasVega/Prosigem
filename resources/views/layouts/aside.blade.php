@@ -55,6 +55,12 @@
                                 <p>Act. Economicas</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/arl') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Arl</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">

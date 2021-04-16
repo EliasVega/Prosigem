@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ActividadEconomicaController;
+use App\Http\Controllers\ArlController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\MunicipioController;
@@ -31,3 +32,4 @@ Route::resource('admin/municipio', MunicipioController::class);
 Route::resource('admin/servicio', ServicioController::class);
 Route::resource('admin/empresa', EmpresaController::class);
 Route::resource('admin/actEco', ActividadEconomicaController::class);
+Route::resource('admin/arl', ArlController::class);
