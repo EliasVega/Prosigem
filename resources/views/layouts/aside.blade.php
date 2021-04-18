@@ -115,6 +115,12 @@
                                 <p>Programas</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/convocatoria') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Convocatorias</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
