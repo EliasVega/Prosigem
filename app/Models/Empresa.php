@@ -35,4 +35,9 @@ class Empresa extends Model
     {
         return $this->belongsTo(Servicio::class);
     }
+
+    public function sedes()
+    {
+        return $this->hasMany(Sede::class);
+    }
 }

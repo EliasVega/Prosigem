@@ -56,7 +56,7 @@ Route::resource('admin/politica', PoliticaController::class);
 Route::resource('admin/programa', ProgramaController::class);
 Route::resource('admin/convocatoria', ConvocatoriaController::class);
 
-Route::get('/getMunicipio', [EmpresaController::class, 'getMunicipio']);
+Route::get('admin/empresa/create/{id]', [EmpresaController::class, 'getMunicipio']);
 Route::get('/personalShow', [EmpresaController::class, 'personalShow'])->name('personalShow');
 Route::get('/getMunicipio', [SedeController::class, 'getMunicipio']);
 Route::get('/createDocumento', [CargoController::class, 'createDocumento'])->name('createDocumento');

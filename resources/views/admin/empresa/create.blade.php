@@ -26,7 +26,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group row">
-                                <label for="departamento_id" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-form-label">Departamentos</label>
+                                <label for="departamento_id" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 form-control-label">Departamentos</label>
                                 <div class="select col-lg-4 col-md-4 col-sm-8 col-xs-12">
                                     <select name="departamento_id" class="form-control selectpicker" data-live-search="true" id="departamento" required>
                                         <option value="{{ old('departamento_id') }}" disabled selected>Seleccionar.</option>
@@ -39,10 +39,10 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group row">
-                                <label for="municipio_id" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-form-label">Municipio</label>
-                                <div class=" select col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                                <label for="municipio_id" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 form-control-label">Municipio</label>
+                                <div class="select col-lg-4 col-md-4 col-sm-8 col-xs-12">
                                     <select name="municipio_id" class="form-control" id="municipio" required>
-                                        <option value ="{{ old('municipio_id') }}" disabled selected>Seleccionar...</option>
+                                        <option value ="" disabled selected>Seleccionar...</option>
                                     </select>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
 @section('scripts')
     <script>
         /*$(document).ready(function(){
-            alert('estoy funcionando correctamanete empresa');
+            alert('estoy funcionando correctamanete colegio');
         });*/
         $("#departamento").change(function(event){
             $.get("create/" + event.target.value + "", function(response){
@@ -145,5 +145,6 @@
                 }
             });
         });
+
     </script>
 @endsection
