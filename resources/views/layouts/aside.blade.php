@@ -91,6 +91,12 @@
                                 <p>Documentos</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/inspeccion') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Inspecciones</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
