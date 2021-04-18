@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class InspeccionFormRequest extends FormRequest
+class MatrizRiesgoFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,8 +25,8 @@ class InspeccionFormRequest extends FormRequest
     {
         return [
             'user_id' => '',
-            'codigo' => 'required',
-            'version' => 'required',
+            'area' => 'required|max:45',
+            'descripcion' => 'required|max:100',
         ];
     }
 }
