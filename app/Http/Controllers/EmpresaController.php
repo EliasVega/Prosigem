@@ -9,6 +9,11 @@ use App\Models\Municipio;
 use App\Models\Servicio;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
+
+
 
 class EmpresaController extends Controller
 {
@@ -35,7 +40,7 @@ class EmpresaController extends Controller
     public function create()
     {
         $departamentos = Departamento::get();
-        $muncipios = Municipio::get();
+        $municipios = Municipio::get();
         $servicios = Servicio::get();
         $users = User::where('role_id', '=', 2)->get();
         return view('admin.empresa.create', compact('departamentos', 'municipios', 'servicios', 'users'));
