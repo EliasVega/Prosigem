@@ -97,6 +97,24 @@
                                 <p>Inspecciones</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/matrizRiesgo') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Matriz de Riesgos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/politica') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Politicas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('admin/programa') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Programas</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
