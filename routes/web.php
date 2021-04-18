@@ -4,6 +4,7 @@ use App\Http\Controllers\ActividadEconomicaController;
 use App\Http\Controllers\ArlController;
 use App\Http\Controllers\CargoController;
 use App\Http\Controllers\CargoDocumentoController;
+use App\Http\Controllers\ConvocatoriaController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\EmpresaController;
@@ -53,6 +54,7 @@ Route::resource('admin/inspeccion', InspeccionController::class);
 Route::resource('admin/matrizRiesgo', MatrizRiesgoController::class);
 Route::resource('admin/politica', PoliticaController::class);
 Route::resource('admin/programa', ProgramaController::class);
+Route::resource('admin/convocatoria', ConvocatoriaController::class);
 
 Route::get('/getMunicipio', [EmpresaController::class, 'getMunicipio']);
 Route::get('/personalShow', [EmpresaController::class, 'personalShow'])->name('personalShow');
