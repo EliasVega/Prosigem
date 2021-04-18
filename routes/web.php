@@ -62,3 +62,5 @@ Route::get('/getMunicipio', [SedeController::class, 'getMunicipio']);
 Route::get('/createDocumento', [CargoController::class, 'createDocumento'])->name('createDocumento');
 Route::get('/userShow', [CargoController::class, 'userShow'])->name('userShow');
 Route::post('admin/cargo/documento/{id}', [CargoController::class, 'storeDocumento'])->name('stroeDocumento');
+Route::get('admin/convocatoria/pdfConvocatoria/{id}', [ConvocatoriaController::class, 'pdfConvocatoria'])->name('pdfConvocatoria');
+
